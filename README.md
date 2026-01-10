@@ -10,4 +10,4 @@ RestTemplate — synchronous client with template method API, now deprecated
 
 HTTP Service Clients — annotated interface backed by generated proxy
 
-When RestTemplate is deprecated, instead of using WebClient (which is reactive), RestClient is a good option for making calls to REST endpoint.
+### When RestTemplate is deprecated, instead of using WebClient (which is reactive), RestClient is a good option for making calls to REST endpoint.
