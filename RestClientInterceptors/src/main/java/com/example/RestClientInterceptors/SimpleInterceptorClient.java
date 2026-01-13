@@ -13,6 +13,13 @@ import org.springframework.web.client.RestClient;
 @Component
 public class SimpleInterceptorClient {
     private final RestClient restClient;
+    //RestClient restClient = RestClient.create();
+    //String url = "https://jsonplaceholder.typicode.com/";
+    //String response = restClient.get()
+    //.uri(url)
+    //.retrieve()
+    // .body(String.class);
+   //System.out.println(response);
     private static Logger log= LoggerFactory.getLogger(SimpleInterceptorClient.class);
 
     public SimpleInterceptorClient(RestClient.Builder builder, ClientHttpRequestInterceptor myInterceptor) {
