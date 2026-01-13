@@ -23,6 +23,7 @@ public class SimpleInterceptorClient {
     private static Logger log= LoggerFactory.getLogger(SimpleInterceptorClient.class);
 
     public SimpleInterceptorClient(RestClient.Builder builder, ClientHttpRequestInterceptor myInterceptor) {
+        //In Spring’s RestClient (Spring Framework 6+), interceptors can only be added through a RestClient.Builder
         this.restClient = builder
                 .baseUrl("https://jsonplaceholder.typicode.com/")
                 .requestFactory(new JdkClientHttpRequestFactory())
